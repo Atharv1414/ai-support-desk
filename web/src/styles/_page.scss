@@ -1,0 +1,95 @@
+.page {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem) var(--gutter) 4rem;
+  display: grid;
+  gap: 1rem;
+
+  > * { min-width: 0; }
+
+  h1 { max-width: 24ch; }
+
+  h2 { margin-top: 2rem; }
+}
+
+.lead { font-size: 1.12rem; color: var(--ink-2); }
+
+.scroll { overflow-x: auto; }
+
+table { border-collapse: collapse; width: 100%; min-width: 40rem; font-variant-numeric: tabular-nums; }
+
+caption { text-align: left; color: var(--ink-2); padding-bottom: 0.5rem; }
+
+th,
+td { text-align: left; vertical-align: top; padding: 0.6rem 1rem 0.6rem 0; border-bottom: 1px solid var(--line); }
+
+thead th { color: var(--ink-2); font-weight: 500; font-size: 0.9rem; }
+
+th .pill { margin-left: 0.5rem; }
+
+.num { text-align: right; }
+
+.checks { font-size: 0.9rem; }
+
+.checks .ok span:first-child { color: var(--ok); }
+
+.checks .bad span:first-child { color: var(--bad); }
+
+.small {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+  gap: 1.5rem;
+
+  figcaption { font: 500 0.85rem var(--mono); }
+
+  svg { display: block; width: 100%; max-width: 20rem; height: auto; }
+
+  text { font: 11px var(--body); fill: var(--ink-2); }
+
+  .grid { stroke: var(--line); }
+
+  .ideal { stroke: var(--ink-2); stroke-dasharray: 4 4; }
+
+  circle { fill: color-mix(in oklab, var(--accent) 60%, transparent); stroke: var(--accent); }
+}
+
+.seg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  button { padding: 0.4rem 0.8rem; border: 1px solid var(--line); border-radius: 4px; font: 0.85rem var(--mono); }
+
+  button[aria-pressed='true'] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+}
+
+.heat {
+  min-width: 46rem;
+
+  th,
+  td { padding: 0.4rem; text-align: center; border: 1px solid var(--bg); }
+
+  tbody th { text-align: right; font-weight: 500; }
+
+  td { font-variant-numeric: tabular-nums; background: color-mix(in oklab, var(--line) 30%, transparent); }
+
+  .hit { background: color-mix(in oklab, var(--ok) calc(var(--n) * 45%), var(--panel)); }
+
+  .miss { background: color-mix(in oklab, var(--bad) calc(12% + var(--n) * 55%), var(--panel)); }
+}
+
+.mistakes li { padding: 0.45rem 0; border-bottom: 1px solid var(--line); }
+
+.mistakes span { color: var(--ink-2); }
+
+summary { cursor: pointer; padding: 0.5rem 0; font-weight: 600; }
+
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.5rem; }
+
+.facts dt { color: var(--ink-2); }
+
+.facts dd { margin: 0; font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; }
+
+.sections { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(19rem, 100%), 1fr)); gap: 1.25rem 2rem; }
+
+.sections p { color: var(--ink-2); font-size: 0.95rem; }

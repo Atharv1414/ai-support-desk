@@ -1,0 +1,1051 @@
+{
+ "champion": "v1-tfidf",
+ "models": [
+  {
+   "version": "v1-tfidf",
+   "kind": "TF-IDF and logistic regression",
+   "train_data": "8166d0a5ea54",
+   "validation_data": "e149ba840805",
+   "test_data": "722420feaf18",
+   "train_size": 1500,
+   "validation_size": 300,
+   "test_size": 120,
+   "metrics": {
+    "accuracy": 0.55,
+    "interval": [
+     0.4583333333333333,
+     0.6416666666666667
+    ],
+    "macro_f1": 0.5488464506371324,
+    "ece": 0.12188387007256873,
+    "temperature": 0.7864629448924666,
+    "per_intent": {
+     "late": 0.75,
+     "damaged": 0.6666666666666666,
+     "fault": 0.25,
+     "refund": 0.4166666666666667,
+     "return": 0.4166666666666667,
+     "cancel": 0.5,
+     "address": 0.5,
+     "warranty": 0.4166666666666667,
+     "help": 0.8333333333333334,
+     "charge": 0.75
+    },
+    "selective": [
+     {
+      "handled": 1.0,
+      "accuracy": 0.55
+     },
+     {
+      "handled": 0.9,
+      "accuracy": 0.5833333333333334
+     },
+     {
+      "handled": 0.8,
+      "accuracy": 0.6145833333333334
+     },
+     {
+      "handled": 0.7,
+      "accuracy": 0.6428571428571429
+     },
+     {
+      "handled": 0.6,
+      "accuracy": 0.6388888888888888
+     },
+     {
+      "handled": 0.5,
+      "accuracy": 0.7
+     }
+    ],
+    "reliability": [
+     {
+      "confidence": 0.17262147765080446,
+      "accuracy": 0.0,
+      "n": 3
+     },
+     {
+      "confidence": 0.25892765643032517,
+      "accuracy": 0.45454545454545453,
+      "n": 11
+     },
+     {
+      "confidence": 0.3467810546709868,
+      "accuracy": 0.3333333333333333,
+      "n": 12
+     },
+     {
+      "confidence": 0.45284627786129994,
+      "accuracy": 0.36363636363636365,
+      "n": 11
+     },
+     {
+      "confidence": 0.5451933921002285,
+      "accuracy": 0.5,
+      "n": 22
+     },
+     {
+      "confidence": 0.6531077632870254,
+      "accuracy": 0.25,
+      "n": 8
+     },
+     {
+      "confidence": 0.7527217103220948,
+      "accuracy": 0.6666666666666666,
+      "n": 12
+     },
+     {
+      "confidence": 0.8509582613447413,
+      "accuracy": 0.5555555555555556,
+      "n": 18
+     },
+     {
+      "confidence": 0.9671607184083287,
+      "accuracy": 0.9565217391304348,
+      "n": 23
+     }
+    ],
+    "confusion": [
+     [
+      9,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      4,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      4,
+      3,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      4,
+      0,
+      0,
+      5,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      1,
+      3,
+      5,
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      3,
+      0,
+      0,
+      0,
+      1,
+      6,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      3,
+      2,
+      0,
+      0,
+      1,
+      0,
+      6,
+      0,
+      0,
+      0
+     ],
+     [
+      2,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      2,
+      0
+     ],
+     [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      10,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      9
+     ]
+    ],
+    "validation_accuracy": 0.4633333333333333,
+    "milliseconds": 0.062289916362108975
+   },
+   "gate": {
+    "passed": true,
+    "checks": {
+     "first model": true
+    }
+   }
+  },
+  {
+   "version": "v2-smollm-zero-shot",
+   "kind": "SmolLM2-135M, no training",
+   "train_data": "8166d0a5ea54",
+   "validation_data": "e149ba840805",
+   "test_data": "722420feaf18",
+   "train_size": 1500,
+   "validation_size": 300,
+   "test_size": 120,
+   "metrics": {
+    "accuracy": 0.06666666666666667,
+    "interval": [
+     0.025,
+     0.10854166666666554
+    ],
+    "macro_f1": 0.022028985507246378,
+    "ece": 0.07198847432931264,
+    "temperature": 16.005977412315367,
+    "per_intent": {
+     "late": 0.25,
+     "damaged": 0.4166666666666667,
+     "fault": 0.0,
+     "refund": 0.0,
+     "return": 0.0,
+     "cancel": 0.0,
+     "address": 0.0,
+     "warranty": 0.0,
+     "help": 0.0,
+     "charge": 0.0
+    },
+    "selective": [
+     {
+      "handled": 1.0,
+      "accuracy": 0.06666666666666667
+     },
+     {
+      "handled": 0.9,
+      "accuracy": 0.07407407407407407
+     },
+     {
+      "handled": 0.8,
+      "accuracy": 0.08333333333333333
+     },
+     {
+      "handled": 0.7,
+      "accuracy": 0.09523809523809523
+     },
+     {
+      "handled": 0.6,
+      "accuracy": 0.09722222222222222
+     },
+     {
+      "handled": 0.5,
+      "accuracy": 0.11666666666666667
+     }
+    ],
+    "reliability": [
+     {
+      "confidence": 0.1386551409959793,
+      "accuracy": 0.06666666666666667,
+      "n": 120
+     }
+    ],
+    "confusion": [
+     [
+      3,
+      9,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      7,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      7,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      6,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      4,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      5,
+      7,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      4,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      7,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      6,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      8,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "validation_accuracy": 0.12333333333333334,
+    "milliseconds": 11.621116291280487
+   },
+   "gate": {
+    "passed": false,
+    "checks": {
+     "more accurate, beyond chance": false,
+     "no intent much worse": false,
+     "confidence is honest": true
+    },
+    "gain": {
+     "gain": -0.48333333333333334,
+     "low": -0.575,
+     "high": -0.38333333333333336
+    },
+    "worst_intent": {
+     "intent": "help",
+     "drop": 0.8333333333333334
+    },
+    "ece": 0.07198847432931264
+   }
+  },
+  {
+   "version": "v3-smollm-lora",
+   "kind": "SmolLM2-135M with LoRA",
+   "train_data": "8166d0a5ea54",
+   "validation_data": "e149ba840805",
+   "test_data": "722420feaf18",
+   "train_size": 1500,
+   "validation_size": 300,
+   "test_size": 120,
+   "training": {
+    "trainable": 460800,
+    "parameters": 134515008,
+    "steps": 375,
+    "first_loss": 3.790899157524109,
+    "last_loss": 0.0015230291581247001,
+    "epochs": 3,
+    "rank": 8
+   },
+   "metrics": {
+    "accuracy": 0.6333333333333333,
+    "interval": [
+     0.55,
+     0.725
+    ],
+    "macro_f1": 0.6223359104647137,
+    "ece": 0.12832976430654525,
+    "temperature": 2.0320405397090324,
+    "per_intent": {
+     "late": 0.8333333333333334,
+     "damaged": 0.6666666666666666,
+     "fault": 0.5833333333333334,
+     "refund": 0.25,
+     "return": 0.3333333333333333,
+     "cancel": 0.6666666666666666,
+     "address": 0.75,
+     "warranty": 0.5833333333333334,
+     "help": 0.8333333333333334,
+     "charge": 0.8333333333333334
+    },
+    "selective": [
+     {
+      "handled": 1.0,
+      "accuracy": 0.6333333333333333
+     },
+     {
+      "handled": 0.9,
+      "accuracy": 0.6388888888888888
+     },
+     {
+      "handled": 0.8,
+      "accuracy": 0.6666666666666666
+     },
+     {
+      "handled": 0.7,
+      "accuracy": 0.7261904761904762
+     },
+     {
+      "handled": 0.6,
+      "accuracy": 0.7361111111111112
+     },
+     {
+      "handled": 0.5,
+      "accuracy": 0.7666666666666667
+     }
+    ],
+    "reliability": [
+     {
+      "confidence": 0.25248411297798157,
+      "accuracy": 0.5,
+      "n": 6
+     },
+     {
+      "confidence": 0.36659109592437744,
+      "accuracy": 0.5,
+      "n": 16
+     },
+     {
+      "confidence": 0.43392515182495117,
+      "accuracy": 0.3076923076923077,
+      "n": 13
+     },
+     {
+      "confidence": 0.551394522190094,
+      "accuracy": 0.6363636363636364,
+      "n": 11
+     },
+     {
+      "confidence": 0.6497978568077087,
+      "accuracy": 0.5263157894736842,
+      "n": 19
+     },
+     {
+      "confidence": 0.7425154447555542,
+      "accuracy": 0.8823529411764706,
+      "n": 17
+     },
+     {
+      "confidence": 0.8484856486320496,
+      "accuracy": 0.75,
+      "n": 24
+     },
+     {
+      "confidence": 0.936942458152771,
+      "accuracy": 0.7857142857142857,
+      "n": 14
+     }
+    ],
+    "confusion": [
+     [
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      8,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      2,
+      1,
+      7,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0,
+      3,
+      4,
+      0,
+      0,
+      1,
+      0,
+      2
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      4,
+      4,
+      1,
+      0,
+      1,
+      0
+     ],
+     [
+      2,
+      0,
+      0,
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      9,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      7,
+      2,
+      1
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      10,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10
+     ]
+    ],
+    "validation_accuracy": 0.6833333333333333,
+    "milliseconds": 26.71110762457829
+   },
+   "gate": {
+    "passed": false,
+    "checks": {
+     "more accurate, beyond chance": false,
+     "no intent much worse": true,
+     "confidence is honest": false
+    },
+    "gain": {
+     "gain": 0.08333333333333333,
+     "low": -0.025,
+     "high": 0.2
+    },
+    "worst_intent": {
+     "intent": "refund",
+     "drop": 0.16666666666666669
+    },
+    "ece": 0.12832976430654525
+   }
+  }
+ ],
+ "mistakes": [
+  {
+   "text": "My mum's birthday is tomorrow and her toaster hasn't arrived",
+   "truth": "late",
+   "said": "damaged"
+  },
+  {
+   "text": "Still waiting!!!",
+   "truth": "late",
+   "said": "warranty"
+  },
+  {
+   "text": "The driver was meant to ring me an hour before. No call, no van, no blender.",
+   "truth": "late",
+   "said": "cancel"
+  },
+  {
+   "text": "One corner has been crushed in transit, it won't sit flat on the worktop",
+   "truth": "damaged",
+   "said": "late"
+  },
+  {
+   "text": "I could hear it rattling before I even opened it. The handle has snapped off.",
+   "truth": "damaged",
+   "said": "late"
+  },
+  {
+   "text": "The delivery guy dropped it on the step and now the casing is split",
+   "truth": "damaged",
+   "said": "late"
+  },
+  {
+   "text": "It looks like someone has driven over the parcel",
+   "truth": "damaged",
+   "said": "late"
+  },
+  {
+   "text": "It worked for a month and now it just clicks and does nothing",
+   "truth": "fault",
+   "said": "late"
+  },
+  {
+   "text": "The display flashes E4 and beeps until I unplug it",
+   "truth": "fault",
+   "said": "late"
+  },
+  {
+   "text": "Toaster only browns one side of the bread",
+   "truth": "fault",
+   "said": "damaged"
+  },
+  {
+   "text": "Blender stops after ten seconds and smells of burning",
+   "truth": "fault",
+   "said": "late"
+  },
+  {
+   "text": "there was a bang and smoke came out of the back of the fan",
+   "truth": "fault",
+   "said": "damaged"
+  },
+  {
+   "text": "The vacuum has lost all suction, I've emptied it and cleaned the filters",
+   "truth": "fault",
+   "said": "late"
+  },
+  {
+   "text": "Won't switch on at all. Tried three different sockets.",
+   "truth": "fault",
+   "said": "charge"
+  },
+  {
+   "text": "My coffee machine pours cold water now",
+   "truth": "fault",
+   "said": "damaged"
+  },
+  {
+   "text": "the oven says 200 but my thermometer says 140",
+   "truth": "fault",
+   "said": "help"
+  },
+  {
+   "text": "I got an email saying it had been approved but my bank hasn't seen a penny",
+   "truth": "refund",
+   "said": "late"
+  },
+  {
+   "text": "Only half of what I paid has been credited",
+   "truth": "refund",
+   "said": "late"
+  },
+  {
+   "text": "Your colleague said five working days. It has been fifteen.",
+   "truth": "refund",
+   "said": "late"
+  },
+  {
+   "text": "I returned the fan on the 3rd, when can I expect the credit",
+   "truth": "refund",
+   "said": "return"
+  },
+  {
+   "text": "The shop confirmed they received it, so why am I still out of pocket",
+   "truth": "refund",
+   "said": "late"
+  },
+  {
+   "text": "Waiting on sixty quid from you",
+   "truth": "refund",
+   "said": "charge"
+  },
+  {
+   "text": "is the credit going to my old card? that one has expired",
+   "truth": "refund",
+   "said": "address"
+  },
+  {
+   "text": "Not what I expected from the pictures. Can I bring it to a shop?",
+   "truth": "return",
+   "said": "charge"
+  },
+  {
+   "text": "My wife bought the same one so we have two, can one go back",
+   "truth": "return",
+   "said": "refund"
+  },
+  {
+   "text": "I've changed my mind about the blender, it's still sealed",
+   "truth": "return",
+   "said": "fault"
+  },
+  {
+   "text": "Please arrange a collection, I don't want to keep it",
+   "truth": "return",
+   "said": "cancel"
+  },
+  {
+   "text": "Is it 28 days or 30 to bring something back",
+   "truth": "return",
+   "said": "refund"
+  },
+  {
+   "text": "I threw the box away, will you still take it?",
+   "truth": "return",
+   "said": "refund"
+  },
+  {
+   "text": "The colour is wrong for us so it needs to go back to you",
+   "truth": "return",
+   "said": "address"
+  },
+  {
+   "text": "Don't send it. I've just been given one.",
+   "truth": "cancel",
+   "said": "return"
+  },
+  {
+   "text": "Can I call off the delivery that is booked for Monday",
+   "truth": "cancel",
+   "said": "late"
+  },
+  {
+   "text": "How do I pull out of an order I made ten minutes ago",
+   "truth": "cancel",
+   "said": "help"
+  },
+  {
+   "text": "Kindly scrap my purchase from this morning",
+   "truth": "cancel",
+   "said": "charge"
+  },
+  {
+   "text": "Is it too late to stop it going out?",
+   "truth": "cancel",
+   "said": "late"
+  },
+  {
+   "text": "I've been made redundant and can't afford it now, please don't take it any further",
+   "truth": "cancel",
+   "said": "late"
+  },
+  {
+   "text": "Could the parcel go next door if I'm out, number 7",
+   "truth": "address",
+   "said": "late"
+  },
+  {
+   "text": "Autofill used my parents' house. I need it here in Bristol.",
+   "truth": "address",
+   "said": "damaged"
+  },
+  {
+   "text": "There's a new safe place, leave it in the porch not the shed",
+   "truth": "address",
+   "said": "damaged"
+  },
+  {
+   "text": "Typed the street wrong, it's Elm Grove not Elm Road",
+   "truth": "address",
+   "said": "late"
+  },
+  {
+   "text": "I'd like it taken to the ground floor flat rather than the first floor",
+   "truth": "address",
+   "said": "return"
+  },
+  {
+   "text": "change where it's going pls, I'm staying with a friend this month",
+   "truth": "address",
+   "said": "late"
+  },
+  {
+   "text": "Is accidental damage included",
+   "truth": "warranty",
+   "said": "damaged"
+  },
+  {
+   "text": "I never registered it. Does that mean I'm not covered?",
+   "truth": "warranty",
+   "said": "late"
+  },
+  {
+   "text": "Would descaling it myself invalidate anything?",
+   "truth": "warranty",
+   "said": "late"
+  },
+  {
+   "text": "Can I buy an extra year of protection",
+   "truth": "warranty",
+   "said": "help"
+  },
+  {
+   "text": "Are filters and seals covered or just the motor",
+   "truth": "warranty",
+   "said": "damaged"
+  },
+  {
+   "text": "I use it in my cafe, am I still protected",
+   "truth": "warranty",
+   "said": "help"
+  },
+  {
+   "text": "When does my cover start, the day I bought it or the day it came?",
+   "truth": "warranty",
+   "said": "damaged"
+  },
+  {
+   "text": "What does the snowflake symbol mean",
+   "truth": "help",
+   "said": "warranty"
+  },
+  {
+   "text": "is it ok to use an extension lead with the heater",
+   "truth": "help",
+   "said": "damaged"
+  },
+  {
+   "text": "My invoice says \u00a3120 but the website said \u00a399",
+   "truth": "charge",
+   "said": "address"
+  },
+  {
+   "text": "I need a VAT receipt for this",
+   "truth": "charge",
+   "said": "return"
+  },
+  {
+   "text": "The price dropped the day after I bought it, can you match it",
+   "truth": "charge",
+   "said": "fault"
+  }
+ ],
+ "retrieval": {
+  "sections": 41,
+  "floor": 0.56,
+  "tuned_floor": 0.56,
+  "dev": {
+   "questions": 18,
+   "unanswerable": 10,
+   "bm25": {
+    "recall@1": 0.7222222222222222,
+    "recall@3": 0.7777777777777778,
+    "mrr": 0.7407407407407408
+   },
+   "semantic": {
+    "recall@1": 0.6666666666666666,
+    "recall@3": 0.8333333333333334,
+    "mrr": 0.75
+   },
+   "hybrid": {
+    "recall@1": 0.7222222222222222,
+    "recall@3": 0.7777777777777778,
+    "mrr": 0.7777777777777778
+   },
+   "refuses_unanswerable": 0.8,
+   "refuses_answerable": 0.16666666666666666
+  },
+  "test": {
+   "questions": 24,
+   "unanswerable": 14,
+   "bm25": {
+    "recall@1": 0.75,
+    "recall@3": 0.8333333333333334,
+    "mrr": 0.7916666666666666
+   },
+   "semantic": {
+    "recall@1": 0.6666666666666666,
+    "recall@3": 0.875,
+    "mrr": 0.78125
+   },
+   "hybrid": {
+    "recall@1": 0.7083333333333334,
+    "recall@3": 0.8333333333333334,
+    "mrr": 0.7743055555555555
+   },
+   "refuses_unanswerable": 0.7857142857142857,
+   "refuses_answerable": 0.2916666666666667
+  }
+ },
+ "drift": [
+  {
+   "name": "The same kind of mail",
+   "intent_psi": 0.103194325974706,
+   "confidence_psi": 0.053760944972809976,
+   "new_words": 0.015180265654648957,
+   "usual_new_words": 0.020586400499064253,
+   "state": "warn"
+  },
+  {
+   "name": "A courier strike",
+   "intent_psi": 1.3190693735302952,
+   "confidence_psi": 0.3443363915519674,
+   "new_words": 0.009846153846153846,
+   "usual_new_words": 0.020586400499064253,
+   "state": "alarm"
+  },
+  {
+   "name": "Hand-written messages",
+   "intent_psi": 0.3653638409184967,
+   "confidence_psi": 0.313497778536436,
+   "new_words": 0.43830431491294475,
+   "usual_new_words": 0.020586400499064253,
+   "state": "alarm"
+  },
+  {
+   "name": "Spam",
+   "intent_psi": 2.1608035697619212,
+   "confidence_psi": 4.731676574829147,
+   "new_words": 0.9699842022116903,
+   "usual_new_words": 0.020586400499064253,
+   "state": "alarm"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "champion": "v1-tfidf",
+ "history": [
+  {
+   "from": null,
+   "to": "v1-tfidf"
+  }
+ ]
+}

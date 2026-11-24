@@ -1,0 +1,18 @@
+{
+ "passed": false,
+ "checks": {
+  "more accurate, beyond chance": false,
+  "no intent much worse": true,
+  "confidence is honest": false
+ },
+ "gain": {
+  "gain": 0.08333333333333333,
+  "low": -0.025,
+  "high": 0.2
+ },
+ "worst_intent": {
+  "intent": "refund",
+  "drop": 0.16666666666666669
+ },
+ "ece": 0.12832976430654525
+}

@@ -1,0 +1,67 @@
+question,section
+How long does standard delivery take?,delivery-times#standard-delivery
+Is delivery free?,delivery-times#standard-delivery
+Can I get a fridge tomorrow?,delivery-times#next-day-delivery
+My parcel is late what happens now,delivery-times#if-it-is-late
+How many times will the courier try,missed-delivery#what-the-courier-does
+I missed the driver can I pick another day,missed-delivery#booking-another-day
+Can I change my address after it has been sent,change-address#before-dispatch
+Can you leave it in the porch,change-address#safe-place
+What does it cost to cancel,cancel-order#before-dispatch
+It has already shipped but I want to cancel,cancel-order#after-dispatch
+How many days do I have to send something back,returns#how-long-you-have
+I threw away the packaging,returns#how-long-you-have
+Where do I get a returns label,returns#how-to-send-it-back
+Will you pick up an oven,returns#how-to-send-it-back
+I have opened it can it still go back,returns#opened-items
+When will the money reach my bank,refund-times#timing
+My card has expired where does the refund go,refund-times#expired-cards
+Why is my refund less than I paid,refund-times#part-refunds
+It was broken in the box do you need a photo,damaged-items#tell-us
+Will you send a replacement for something smashed,damaged-items#what-we-do
+It died after two weeks can I get a refund,faulty-items#first-30-days
+It broke after a year how long is a repair,faulty-items#after-30-days
+What does E4 mean,faulty-items#error-codes
+There are sparks coming out of it,safety#smoke-sparks-or-shocks
+Can I plug the heater into an extension lead,safety#extension-leads
+How long is the guarantee,guarantee#what-is-covered
+Is accidental damage included,guarantee#what-is-not-covered
+I use it in my cafe am I covered,guarantee#what-is-not-covered
+Do I need to register it,guarantee#registering
+Can I buy another year of cover,longer-cover#adding-a-year
+I have been charged twice,payments#two-payments
+Where is my VAT invoice,payments#vat-invoices
+The price dropped the day after I bought it,payments#price-match
+Can I add a code after paying,discounts#codes
+Do gift cards run out,discounts#gift-cards
+How do I get rid of limescale,kettle-care#descaling
+Can the jug go in the dishwasher,blender-care#cleaning
+Which blade for oat milk,blender-care#blades
+How do I set the oven timer,oven-settings#timer
+What is the snowflake,oven-settings#symbols
+My hoover has no suction,vacuum-care#lost-suction
+How do I connect it to my phone,app#pairing
+Do you sell dishwashers,
+What are your opening hours in Leeds,
+Who founded the company,
+Can I pay with bitcoin,
+Do you have any jobs going,
+What is the capital of France,
+Is there a student union discount on train tickets,
+Can you recommend a pasta recipe,
+Can I come and see your warehouse,
+Do you make anything from recycled plastic,
+Is the toaster available in pink,
+What time does the next train leave,
+Are your kettles made in Britain,
+Who is your chief executive,
+Can I open a trade account,
+Do you deliver to Norway,
+How much does the blender weigh,
+Will it rain this weekend,
+Can I work from home at your company,
+What wattage is the vacuum,
+Can you fix my laptop,
+Do you sponsor local football teams,
+Is there parking at the shop,
+How do I unsubscribe from the newsletter,

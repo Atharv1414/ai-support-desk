@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; }
+
+body { background: var(--bg); color: var(--ink); font: 400 1rem/1.5 var(--body); overflow-wrap: break-word; }
+
+h1 { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem); line-height: 1.12; letter-spacing: -0.02em; text-wrap: balance; }
+
+h2 { font-size: 1.25rem; letter-spacing: -0.01em; }
+
+h3 { font-size: 1rem; }
+
+p { max-width: 65ch; }
+
+ul,
+ol { list-style: none; padding: 0; }
+
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; text-align: left; }
+
+i { font-style: normal; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+
+.skip { position: absolute; top: -4rem; left: 1rem; z-index: 9; background: var(--accent); color: var(--on-accent); padding: 0.5rem 1rem; }
+
+.skip:focus { top: 0.5rem; }
+
+.btn { background: var(--accent); color: var(--on-accent); padding: 0.6rem 1.1rem; border-radius: 4px; font-weight: 600; border: 1px solid var(--accent); }
+
+.btn--quiet { background: transparent; color: var(--ink); border-color: var(--line); }
+
+.pill {
+  --c: var(--ink-2);
+
+  display: inline-block;
+  color: var(--c);
+  border: 1px solid currentcolor;
+  border-radius: 99px;
+  padding: 0 0.55rem;
+  font: 500 0.75rem/1.5 var(--body);
+  white-space: nowrap;
+
+  &--answered,
+  &--ok { --c: var(--ok); }
+
+  &--waiting,
+  &--warn { --c: var(--wait); }
+
+  &--with_person,
+  &--alarm { --c: var(--bad); }
+}
