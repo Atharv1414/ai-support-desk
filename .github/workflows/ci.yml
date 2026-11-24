@@ -61,7 +61,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env: { BASE_PATH: /ai-support-desk/ }
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with: { path: web/dist }
       - id: pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
