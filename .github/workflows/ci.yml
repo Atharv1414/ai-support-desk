@@ -47,12 +47,10 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: npm run e2e
 
-  deploy:
+  site:
     needs: [python, web]
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
-    permissions: { contents: read, pages: write, id-token: write }
-    environment: { name: github-pages, url: "${{ steps.pages.outputs.page_url }}" }
     defaults: { run: { working-directory: web } }
     steps:
       - uses: actions/checkout@v4
@@ -63,5 +61,12 @@ jobs:
         env: { BASE_PATH: /ai-support-desk/ }
       - uses: actions/upload-pages-artifact@v5
         with: { path: web/dist }
+
+  deploy:
+    needs: site
+    runs-on: ubuntu-latest
+    permissions: { pages: write, id-token: write }
+    environment: { name: github-pages, url: "${{ steps.pages.outputs.page_url }}" }
+    steps:
       - id: pages
         uses: actions/deploy-pages@v5
